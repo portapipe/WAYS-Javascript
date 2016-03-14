@@ -6,19 +6,22 @@ var WAYS  = {
 			func(val,obj[val])
 		}
 	},
-	
+/*
+LOCALSTORAGE
+*/
 	/* Save anything in localStorage with key */
 	save : function(key,obj){
 		localStorage.setItem(""+key,JSON.stringify(obj));
 	},
-	
 	load : function(key){
 		if(localStorage[key]===undefined) return undefined;
 		return JSON.parse(localStorage.getItem(key));
 	},
-	
 	clear : function(key){
 		delete localStorage.removeItem(key);
 	}
+/*
+END LOCALSTORAGE
+*/
 	
 }
