@@ -21,7 +21,7 @@ WAYS.loop(obj,function(key,value){
 };
 
 /* You can storage objects, arrays and simple data! */
-WAYS.save(obj,"Personal Data");
+WAYS.save("Personal Data",obj);
 
 /* The load tool restore the data of the type you stored in (object will return object, array return array and so on */
 console.log(WAYS.load("Personal Data"));
